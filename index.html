@@ -1,48 +1,44 @@
 <!DOCTYPE html>
 <html lang="ja">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portfolio</title>
-    <meta
-      name="description"
-      content="愛情たっぷりのデザインで作る私のポートフォリオ"
-    />
-    <link rel="stylesheet" href="styles.css" />
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>山本梨々花 ポートフォリオ</title>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Gravitas+One&family=Kiwi+Maru&display=swap" rel="stylesheet">
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <body class="anim-box fadein">
+  <div class="content fadein"></div>
     <!-- ヘッダー -->
-    <header class="header" id="header">
+    <header id="header" class="header">
       <div class="header-inner">
-        <h1 class="header-title">
-        <a href="/#">ririkayamamoto</a>
-        </h1>
-        <nav class="header-nav" aria-label="Main Navigation">
-          <ul class="header-manu">
-            <li class="header-menuList">
-              <a class="header-menuLink" href="/#about">
-                ABOUT
-              </a>
-            </li>
-            <li class="header-menuList">
-              <a class="header-menuLink" href="/#service">
-                SERVICE
-              </a>
-            </li>
-            <li class="header-menuList">
-              <a class="header-menuLink" href="/#works">
-                WORKS
-              </a>
-            </li>
-            <li class="header-menuList">
-              <a class="header-menuLink" href="/#contact">
-                CONTACT
-              </a>
-            </li>
+        <div class="site-title">
+          <h1>
+            <a href="index.html#">Ririka's Portfolio</a>
+          </h1>
+        </div>
+        <div class="header-nav">
+          <ul class="header-navMenu">
+            <li class="header-navMenuSection"><a href="#about">ABOUT</a></li>
+            <li class="header-navMenuSection"><a href="#works">WORKS</a></li>
+            <li class="header-navMenuSection"><a href="#skill">SKILL</a></li>
+            <li class="header-navMenuSection"><a href="#contact">CONTACT</a></li>
           </ul>
-        </nav>
+        </div>
+        <div class="hamburger-nav">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
       </div>
     </header>
+
 
     <main>
       <!-- ヒーロー -->
@@ -55,114 +51,171 @@
           <p class="catch">"愛情"たっぷりのデザインを。</p>
         </div>
 
-       <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
-       <path fill="#ffffe0" fill-opacity="1" d="M0,224L48,197.3C96,171,192,117,288,128C384,139,480,213,576,224C672,235,768,181,864,149.3C960,117,1056,107,1152,112C1248,117,1344,139,1392,149.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z"></path>
-       </svg>
+        <svg class="wave" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" preserveAspectRatio="none">
+          <path fill="#ffffe0" fill-opacity="1"
+            d="M0,224L48,197.3C96,171,192,117,288,128C384,139,480,213,576,224C672,235,768,181,864,149.3C960,117,1056,107,1152,112C1248,117,1344,139,1392,149.3L1440,160L1440,0L1392,0C1344,0,1248,0,1152,0C1056,0,960,0,864,0C768,0,672,0,576,0C480,0,384,0,288,0C192,0,96,0,48,0L0,0Z">
+          </path>
+        </svg>
 
       </section>
 
       <!-- 自己紹介 -->
-      <section id="about">
-        <h2>about</h2>
-        <div class="about">
-          <img src="img/S__193110019.jpg" alt="about写真" />
-          <div class="about-text">
-            <h3>Ririka Yamamoto</h3>
-            <p>
-              2001年生まれ、滋賀県出身。<br />
-              現在人事の仕事をしており、帰宅後のおうち時間を使って"なにかしたい"と考えたときにWEBデザインに興味をもち、勉強を始めました。
-            </p>
+      <section id="about" class="about-section">
+        <h2 class="about-top">ABOUT</h2>
+        <div class="container_01">
+          <a href="#" class="scroll-down_01">
+            <div class="circle-text_01"></div>
+            <div class="arrow_01"></div>
+          </a>
+        </div>
+        <div class="container">
+          <div class="about-intro">
+            <div class="about-text">
+              <p class="name">Ririka Yamamoto</p>
+              <p>
+                2001年滋賀県生まれで、現在は人事の仕事をしています。<br>
+                人や組織を支える経験と並行してWeb制作コースで学び、<br>
+                HTML・CSS・JavaScriptを用いたサイト制作にも取り組んできました。<br>
+                これからはその経験を活かし、アイデアを形にして人の心を動かせる<br>
+                Webサイトを制作していきたいと考えています。
+              </p>
+            </div>
+            <img src="img/S__193110019.jpg" alt="山本梨々花の写真" class="about-photo" />
           </div>
+        </div>
+      </section>
+
+      <!-- できること -->
+      <section id="works">
+        <h2 class="works-grit">WORKS</h2>
+        <div class="works-1">
+
+          <div class="works-2">
+            <img class="works-img" src="img/S__193044486.jpg" alt="Portfolio" />
+            <a
+              href="file:///c%3A/Users/ririk/OneDrive/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/portfolio1/index.html#">
+              <div class="works-contact">
+                <p class="item-cat">Portfolio</p>
+                <p class="item-text">
+                  自身のポートフォリオを作成しました。
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="works-2">
+            <img class="works-img" src="img/pickup1.jpg" alt="Travel Blog" />
+            <a
+              href="file:///C:/Users/ririk/OneDrive/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/blog/index.html">
+              <div class="works-contact">
+                <p class="item-cat">Travel Blog</p>
+                <p class="item-text">
+                  素敵な旅のBlogを作成しました。
+                </p>
+              </div>
+            </a>
+          </div>
+
+          <div class="works-2">
+            <img class="works-img" src="img/pickup8.jpg" alt="Sneakers" />
+            <a
+              href="file:///C:/Users/ririk/OneDrive/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/sneakers1/index.html">
+              <div class="works-contact">
+                <p class="item-cat">Sneakers</p>
+                <p class="item-text">
+                  かっこいいスニーカーのホームページを作成しました。
+                </p>
+              </div>
+            </a>
+
+          </div>
+
+          <div class="works-2">
+            <img class="works-img" src="img/location.jpg" alt="Basic" />
+            <a
+              href="file:///C:/Users/ririk/OneDrive/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/html/kiso/index.html">
+              <div class="works-contact">
+                <p class="item-cat">Basic</p>
+                <p class="item-text">
+                  CSSのアニメーション
+                </p>
+              </div>
+
+            </a>
+          </div>
+
+          <div class="works-2">
+            <img class="works-img" src="img/hero3.png" alt="Chair" />
+            <a
+              href="file:///C:/Users/ririk/OneDrive/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/html/kadai/index.html">
+              <div class="works-contact">
+                <p class="item-cat">Chair</p>
+                <p class="item-text">
+                  椅子のホームページを作成しました。
+                </p>
+              </div>
+
+            </a>
+          </div>
+
+          <div class="works-2 works-more">
+            <div class="works-contact">
+              <p class="item-cat">and more...</p>
+            </div>
+          </div>
+
         </div>
       </section>
 
       <!-- スキル -->
-       <!-- <section id="skill" class="skill">
-          <div class="skill__contentWrap">
-            <div class="skill__title">
-              <h2>SKILL</h2>
-            </div>
-            <div class="skill__grid">
-              <div class="skill__gridLeft">
-                <ul class="skill__iconList">
-                  <li class="skill__iconItem">
-                    <img src="https://tens-portfolio.com/wp-content/themes/myportfolio/image/html.png" alt="HTMLアイコン" />
-                  </li>
-                  <li class="skill__iconItem">
-                    <img src="https://tens-portfolio.com/wp-content/themes/myportfolio/image/css.png" alt="CSSアイコン" />
-                  </li>
-                  <li class="skill__iconItem">
-                    <img src="https://tens-portfolio.com/wp-content/themes/myportfolio/image/js.png" alt="JSアイコン" />
-                  </li>
-                </ul>
-                <div class="skill__textLeft">
-                  <p class="skill__gridTextLeft">HTML5、CSS3、JavaScriptでページの構造、見た目のデザイン、動的な要素を実装します。</p>
-                </div>
-              </div>   -->
-
- <section id="skill" class="skill">
-          <div class="skill__contentWrap">
-            <div class="skill__title">
-              <h2>SKILL</h2>
-            </div>
-            <div class="skill__grid">
-              <div class="skill__gridLeft">
-                <ul class="skill__iconList">
-                  <li class="skill__iconItem">
-                    <img src="https://tens-portfolio.com/wp-content/themes/myportfolio/image/html.png" alt="HTMLアイコン" />
-                  </li>
-                  <li class="skill__iconItem">
-                    <img src="https://tens-portfolio.com/wp-content/themes/myportfolio/image/css.png" alt="CSSアイコン" />
-                  </li>
-                  <li class="skill__iconItem">
-                    <img src="https://tens-portfolio.com/wp-content/themes/myportfolio/image/js.png" alt="JSアイコン" />
-                  </li>
-                </ul>
-                <div class="skill__textLeft">
-                  <p class="skill__gridTextLeft">HTML5、CSS3、JavaScriptでページの構造、見た目のデザイン、動的な要素を実装します。</p>
-                </div>
-              </div>  
+      <section id="skill" class="skill">
+        <h2 class="skill__title">SKILL</h2>
+        <div class="skill__contentWrap">
+          <div class="skill__grid">
+            <div class="skill__gridLeft">
+              <ul class="skill__iconList">
+                <li class="skill__iconItem">
+                  <img src="https://tens-portfolio.com/wp-content/themes/myportfolio/image/html.png" alt="HTMLアイコン" />
+                </li>
+                <li class="skill__iconItem">
+                  <img src="https://tens-portfolio.com/wp-content/themes/myportfolio/image/css.png" alt="CSSアイコン" />
+                </li>
+                <li class="skill__iconItem">
+                  <img src="https://tens-portfolio.com/wp-content/themes/myportfolio/image/js.png" alt="JSアイコン" />
+                </li>
+              </ul>
+              <div class="skill__textLeft">
+                <p class="skill__gridTextLeft">HTML5、CSS3、JavaScriptでページの構造、見た目のデザイン、動的な要素を実装します。</p>
+              </div>
             </div>
           </div>
-        </section>
-
-      <!-- 作品 -->
-      <section id="works" class="works">
-        <h2>デザインしたもの</h2>
-        <div class="works-wrapper">
-
-          <div class="works-01"
-            href="file:///C:/Users/ririk/OneDrive/%E3%83%87%E3%82%B9%E3%82%AF%E3%83%88%E3%83%83%E3%83%97/sneakers/Index.html"
-          >
-            <div class="works-img">
-              <img src="img/pickup8.jpg" alt="スニーカー" />
-            </div>
-            <div class="works-body">
-              <h3>スニーカーのホームページ</h3>
-            </div>
-
-        </div>
-
-        </div>
       </section>
+
 
       <!-- お問い合わせ -->
-      <section id="contact" class="contact">
-        <h2>お問い合わせ</h2>
-        <p>お仕事の依頼やご質問はお気軽にどうぞ</p>
-        <p class="alt-contact">
-          ✉
-          <a href="ririkayamamoto.26@gmail.com">ririkayamamoto.26@gmail.com</a>
-        </p>
-      </section>
-
-      <!-- フッター -->
-      <footer class="footer">
-        <div class="container">
-          <p>©riri_design</p>
+      <footer>
+        <div id="contact" class="footer__contact">
+          <div class="contact__content-wrapper">
+            <img class="contact-illust" src="img/love_15793735.png" alt="ありがとうのイラスト">
+            <p class="contact__thanks-message">ご覧いただきありがとうございます</p>
+            <h1>CONTACT</h1>
+            <div class="contact__mail">
+              <span>お仕事の依頼やご質問は下記のメールアドレスにお気軽にご連絡ください</span>
+              <div>
+                <a class="mail-btn" href="mailto:peche.toitoitoi&#64;gmail.com">ririkayamamoto.26@gmail.com</a>
+              </div>
+            </div>
+          </div>
+          <p id="page-top"><a href="#"><img src="img/arrow_13268782.png" alt="ページトップへ"></a></p>
+        </div>
+        <div class="footer__contact1">
+          <small>&copy; 2025 RIRI </small>
         </div>
       </footer>
     </main>
-    <script src="script.js" defer></script>
+  <script src="script.js"></script>
   </body>
+
+</body>
+
 </html>
