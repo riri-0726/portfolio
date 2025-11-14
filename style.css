@@ -470,6 +470,7 @@ img {
   color: inherit;
 }
 
+
 /* スキル */
 .skill {
   background: #e0faff;
@@ -477,6 +478,7 @@ img {
   padding-bottom: 30px;
 }
 
+/* タイトル */
 .skill__title {
   position: relative;
   text-align: center;
@@ -492,9 +494,7 @@ img {
   position: absolute;
   top: 50%;
   width: 40%;
-  /* 線の長さ */
   border-top: 2px dashed #1a237e;
-  /* 点線にする */
 }
 
 .skill__title::before {
@@ -505,51 +505,49 @@ img {
   right: 0;
 }
 
-
-.skill__grid {
-  display: flex;
-  margin: 0 auto;
-  width: 76%;
-  max-width: 1080px;
-  /*追加*/
-  align-items: center;
-}
-
-.skill__gridLeft {
-  display: flex;
-  align-items: center;
-  padding-left: 60px;
-}
-
-.skill__iconList {
+/* 新しいスキルリスト */
+.skill__skillList {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 auto;
+  width: 80%;
+  max-width: 900px;
 }
 
-.skill__iconItem {
-  padding-bottom: 15px;
-}
-
-.skill__iconItem:last-child {
-  margin-right: 0;
-}
-
-.skill__textLeft {
-  width: 100%;
-}
-
-
-.skill__gridTextLeft {
-  width: 100%;
-  padding: 0px 30px 30px 30px;
+.skill__item {
   display: flex;
   align-items: center;
+  margin-bottom: 25px;
 }
 
-.skill__gridTextLeft.is-visible {
-  transition-delay: 0.6s;
+.skill__icon {
+  width: 60px;
+  height: auto;
+  margin-right: 20px;
 }
+
+.skill__text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* スマホサイズ対応 */
+@media screen and (max-width: 768px) {
+  .skill__item {
+    flex-direction: column;
+    text-align: center;
+  }
+
+  .skill__icon {
+    margin: 0 auto 10px;
+  }
+
+  .skill__text {
+    padding: 0 10px;
+  }
+}
+
 
 /* footer */
 footer {
